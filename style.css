@@ -1,0 +1,21 @@
+* {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  font-size: 3em;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
