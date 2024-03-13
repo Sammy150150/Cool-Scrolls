@@ -8,14 +8,38 @@ section {
   align-items: center;
   color: white;
   min-height: 100vh;
-  font-size: 3em;
+  font-size: 2em;
+  text-align: center;
 }
 
-.hide {
+.hide-from-left {
   opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
   transition: all 1s;
 }
-
-.show {
+.show-from-left {
   opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.hide-from-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.show-from-right {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.hide-from-bottom {
+  opacity: 0;
+  transform: translateY(200%);
+  transition: all 1s;
+}
+.show-from-bottom {
+  opacity: 1;
+  transform: translateY(0);
 }
