@@ -3,13 +3,14 @@
   background-color: black;
 }
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   color: white;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   font-size: 2em;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .hide-from-left {
