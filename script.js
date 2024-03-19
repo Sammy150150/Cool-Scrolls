@@ -13,9 +13,7 @@ const observer = new IntersectionObserver((entries) => {
       }
     }
     else {
-      entry.target.classList.remove('show-from-left');
-      entry.target.classList.remove('show-from-right');
-      entry.target.classList.remove('show-from-bottom');
+      entry.target.classList.remove('show-from-left, show-from-right, show-from-bottom');
     }
   });
 });
